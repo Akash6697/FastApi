@@ -1,0 +1,4 @@
+a="aaaaa2222yyyaaayy@@@@99aaa99"
+
+x=len(a)
+print(x)

@@ -1,0 +1,218 @@
+{
+    "info": {
+        "_postman_id": "0c37ba19-a008-4531-afcc-c00618422c3d",
+        "name": "CodeGamma",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Get All Templates",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJha2FzaEBnbWFpbC5jb20iLCJleHAiOjE2OTI1NTM4OTl9.UdsyPIr0Mc2CPbok5jnrT83leNN6I3IRjCkvnyz8K2c",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Single Templates",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/64e24500ef21224ef11f860c",
+                    "path": [
+                        "64e24500ef21224ef11f860c"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJha2FzaEBnbWFpbC5jb20iLCJleHAiOjE2OTI1NTM4OTl9.UdsyPIr0Mc2CPbok5jnrT83leNN6I3IRjCkvnyz8K2c",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Update Single Templates",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:8000/64e24500ef21224ef11f860c",
+                    "path": [
+                        "64e24500ef21224ef11f860c"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"template_name\": \"temp-1\",\n  \"subject\": \"Welcome\",\n  \"body\": \"Hi\"\n}\n"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJha2FzaEBnbWFpbC5jb20iLCJleHAiOjE2OTI1NTM4OTl9.UdsyPIr0Mc2CPbok5jnrT83leNN6I3IRjCkvnyz8K2c",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Delete Single Templates",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:8000/64e24500ef21224ef11f860c",
+                    "path": [
+                        "64e24500ef21224ef11f860c"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJha2FzaEBnbWFpbC5jb20iLCJleHAiOjE2OTI1NTM4OTl9.UdsyPIr0Mc2CPbok5jnrT83leNN6I3IRjCkvnyz8K2c",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Create Template",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8000/",
+                    "path": [
+                        ""
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"template_name\": \"temp-1\",\n  \"subject\": \"Welcom\",\n  \"body\": \"Hello\"\n}\n"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJha2FzaEBnbWFpbC5jb20iLCJleHAiOjE2OTI1NTM4OTl9.UdsyPIr0Mc2CPbok5jnrT83leNN6I3IRjCkvnyz8K2c",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Login",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8000/token",
+                    "path": [
+                        "token"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "username",
+                            "value": "akash@gmail.com",
+                            "type": "default"
+                        },
+                        {
+                            "key": "password",
+                            "value": "Akash@123",
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Register",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8000/register",
+                    "path": [
+                        "register"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"first_name\": \"akash\",\n  \"last_name\": \"kumar\",\n  \"email\": \"akash@gmail.com\",\n  \"password\": \"Akash@123\"\n}\n"
+                }
+            }
+        }
+    ]
+}
